@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *{
     margin:0;
     padding:0;
@@ -40,6 +41,9 @@ img{
 
 img:hover{
     transform: translate(-5%,-5%);
+    border: 1px solid rgba(255, 255, 255, 0.747);
+    transition: transform .3s, border .5s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.452)
 }
 
 iframe{
@@ -49,4 +53,16 @@ iframe{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 600px){
+    nav img{
+        width: 50px;
+        margin: 10px;
+    }
+    nav{
+        position: relative;
+        width:100vw;
+        text-align: center;
+    }
 }
